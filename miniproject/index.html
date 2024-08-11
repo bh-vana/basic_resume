@@ -1,0 +1,250 @@
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+ </head>
+  <body>
+    
+    <div class="container" id="cv-form">
+      <h1 class="text-center">RESUME BUILDER</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Personal Information</h3>
+          <div class="form-group">
+            <label for="nameline">Your Name</label>
+            <input type="text" id="nameline" placeholder="Enter here" class="form-control">
+          </div>
+          <div class="form-group ">
+            <label for="phone">Your Phone Number</label>
+            <input type="number" id="phone" placeholder="Enter here" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="Address">Your Address</label>
+            <textarea  id="Address" placeholder="Enter here" class="form-control"
+            ></textarea>
+          </div>
+          <!--add-->
+          <div class="form-group mt-2">
+            <label for="obj"><h6>Objective</h6></label>
+            <textarea rows="6" id="obj" placeholder="Enter here" class="form-control"
+            ></textarea> 
+          </div>
+          <div class="form-group mt-2" >
+            <label for="lang"><h6>Languages Known</h6></label>
+            <textarea  id="lang" placeholder="Enter here" class="form-control lgField"
+            ></textarea></div>
+            <div class="form-group mt-2">
+              <label for="skill"><h6>SKILLS</h6></label>
+              <textarea  id="skill" placeholder="Enter here" class="form-control skField"
+              ></textarea></div>
+          <!--<h4 class="text-terinary my-3">Important Links</h4>
+          <div class="form-group">
+            <label for="fblink">Facebook</label>
+            <input type="text" id="fblink" placeholder="Enter here" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="insta">Instagram</label>
+            <input type="text" id="insta" placeholder="Enter here" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="linkedlin">Linkedin</label>
+            <input type="text" id="linkedin" placeholder="Enter here" class="form-control">
+          </div>-->
+        </div>
+      
+        <div class="col-md-6">
+          <h4 class="text-terinary my-3">Important Links</h4>
+          <!--add-->
+          <div class="form-group">
+            <label for="fblink">Facebook</label>
+            <input type="text" id="fblink" placeholder="Enter here" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="insta">Instagram</label>
+            <input type="text" id="insta" placeholder="Enter here" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="linkedlin">Linkedin</label>
+            <input type="text" id="linkedin" placeholder="Enter here" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="github">Github</label>
+            <input type="text" id="github" placeholder="Enter here" class="form-control">
+          </div>
+            <!--<h3>Professional Information</h3>
+           <div class="form-group mt-2">
+              <label for="work">Objective</label>
+              <textarea rows="5" id="obj" placeholder="Enter here" class="form-control"
+              ></textarea>
+              
+            </div>-->
+            <div class="form-group mt-2" id="we1">
+              <label for="academic">Work Experience</label>
+              <textarea rows="3" id="workexp" placeholder="Enter here" class="form-control wepField"
+              ></textarea>
+
+              <div class="container text-center mt-3" id="workexp">
+                <button onclick="NewWorkep()" class="btn btn-primary btn-sm">Add</button>
+              </div>
+            </div>
+        
+            <div class="form-group mt-2" id="we2">
+              <label for="academic">Academic Qualification</label>
+              <textarea rows="3" id="academic" placeholder="Enter here" class="form-control acField"
+              ></textarea>
+              <div class="container text-center mt-3" id="academic">
+                <button onclick="NewAcd()" class="btn btn-primary btn-sm">Add</button>
+              </div>
+            </div>
+<!--add-->
+            <div class="form-group mt-2" id="vol1">
+              <label for="vol"><h6>VOLUNTEER</h6></label>
+              <textarea  id="vol" placeholder="Enter here" class="form-control volField"
+              ></textarea>
+              <div class="container text-center mt-3" id="vol">
+                <button onclick="Newvol()" class="btn btn-primary btn-sm">Add</button>
+              </div>
+            </div>
+        </div>
+      </div>
+     <div class="container text-center" >
+        
+      <button onclick="generateCV()" class="btn btn-primary btn-lg">Generate CV</button>
+        
+  
+      </div>
+        </div>
+    </div>
+    <div class="container" id="cv-template">
+      
+      <div class="row">
+        <div class="col-md-4 text-center py-5 background">
+          <img src="https://www.clipartkey.com/mpngs/m/146-1461473_default-profile-picture-transparent.png" alt=""
+          class="img-fluid myimg">
+          <div class="container">
+            <!--add-->
+            <h3>CONTACT</h3>
+            <p id="nameT">Nxxxx</p>
+            <p id="contactT">Cxxxx</p>
+            <p id="addressT">Axxxx</p>
+            <!--add-->
+            <h3 >objective</h3>
+            <p id="objT"> hi hlo   ncfkv  cjvnv    mvnv 
+            </p>
+
+            <hr />
+            <p id="fbT"><a href="**">www.fb.com</a></p>
+            <p id="insT"><a href="**">www.in.com</a></p>
+            <p id="lnT"><a href="**">www.ln.com</a></p>
+            <p id="gitT"><a href="**">www.git.com</a></p>
+
+
+            <!--lang-->
+
+            <h4>Languages Known</h4>
+                <p id="langT"> telugu
+                  english
+                  hindi
+                </p>
+         <!--skills-->
+        
+         <h4>SKILLS</h4>
+         <p id="skillT"> tech
+           phy
+           code
+         </p>
+         
+          </div>
+
+        </div>
+        <div class="col-md-8 py-5 ">
+          <h1 id="nameT1" class="text-center col8" >your name</h1>
+          <!--objective-
+          <div class="card mt-4">
+            <div class="card-header" style="background-color: aquamarine;">
+              <h3 >objective</h3></style>
+            </div>
+            <div class="card-body">
+              <p id="objT"> hfjbfhf jbdhgjb
+                bdfgdsffdb
+                bdgfsngfk
+              </p>
+            </div>
+          </div>-->
+<!--workexp-->
+          <div class="card mt-4">
+            <div class="card-header" style="background-color: aquamarine;">
+              <h3 >Work Experience</h3></style>
+            </div>
+            <div class="card-body">
+            <ul id="wexpT">
+              <li>yyyyyyyyyy
+                kcjkdhufhfb
+              </li>
+            </ul> 
+            </div>
+          </div>
+
+          <!--academic-->
+          <div class="card mt-4">
+            <div class="card-header" style="background-color: aquamarine;">
+              <h3 >Academic Qualification</h3></style>
+            </div>
+            <div class="card-body">
+            <ul id="acdT">
+              <li>yyyyyyyyyy
+                kcjkdhufhfb
+              </li>
+            </ul>
+            
+           
+            </div>
+          </div>
+
+           <!--VOLUc-->
+           <div class="card mt-4">
+            <div class="card-header" style="background-color: aquamarine;">
+              <h3 >VOLUNTEER</h3></style>
+            </div>
+            <div class="card-body">
+            <ul id="volT">
+              <li>yyyyyyyyyy
+                kcjkdhufhfb
+              </li>
+            </ul>
+            <ul>
+              <li>xyyyyyyyyy</li>
+            </ul>
+            <ul>
+              <li>xyyyyyyyyy</li>
+            </ul>
+            </div>
+          </div>
+
+          <div class="container mt-3 text-center">
+            <button onclick="printCV()"class="btn " style="background-color: aquamarine;">
+              THIS YOUR RESUME</style>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+   <!-- <script>
+      var btn = document.querySelector("button");
+      btn.onclick=() =>{
+        window.print();
+      }
+    --></script>
+
+   <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+   --></body>
+</html>

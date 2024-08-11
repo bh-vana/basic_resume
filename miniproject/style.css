@@ -1,0 +1,25 @@
+
+
+#cv-template{
+    display:none;
+}
+.myimg{
+   
+    border-radius: 51%;
+    width:230px;
+
+}
+.background{
+    background-color: aquamarine;
+}
+.col8{
+    
+   
+    font-size: 50px;
+}
+.bin{
+    
+    border-radius:50%;
+    padding-left: 500px;
+    
+}
